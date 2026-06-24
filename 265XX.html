@@ -6,18 +6,111 @@
     <title>赤い背景のページ</title>
     <style>
         body {
-            background-color: #520000; /* ここで背景色を赤に指定しています */
-            color: #ffffff;           /* 文字を読みやすくするために白にしています */
+            background-color: #520000; /* 落ち着いた赤 */
+            color: #ffffff;           /* 白文字 */
             font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* ヘッダー（最初の見出し部分） */
+        header {
+            height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 各セクションの共通スタイル */
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* 特徴セクション用のシンプルなカード型レイアウト */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-box {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
 <body>
-    <h1>赤い背景のページへようこそ！</h1>
+
+    <!-- ヘッダー（メインビジュアル） -->
+    <header>
+        <h1>赤い背景のページへようこそ！</h1>
+    </header>
+
+    <!-- セクション1：概要 -->
+    <section id="about">
+        <h2>概要（About）</h2>
+        <p>ここには、このページや活動についての簡単な説明が入ります。背景色を深みのあるダークレッド（#520000）に設定し、シックで洗練された雰囲気を演出しています。</p>
+    </section>
+
+    <!-- セクション2：特徴 -->
+    <section id="features">
+        <h2>特徴（Features）</h2>
+        <p>このデザインが持つ主なポイントを3つご紹介します。</p>
+        <div class="features">
+            <div class="feature-box">
+                <h3>1. 視認性の確保</h3>
+                <p>暗めの背景に対して白文字を配置し、コントラストを高めて読みやすくしています。</p>
+            </div>
+            <div class="feature-box">
+                <h3>2. レスポンシブ</h3>
+                <p>スマートフォンやタブレット、PCなど、どの画面サイズで見ても綺麗に崩れず表示されます。</p>
+            </div>
+            <div class="feature-box">
+                <h3>3. シンプル構成</h3>
+                <p>余計な装飾を削ぎ落とし、コンテンツが主役になるミニマルな設計です。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション3：お問い合わせ -->
+    <section id="contact">
+        <h2>お問い合わせ（Contact）</h2>
+        <p>何かご質問やご意見がございましたら、下記よりお気軽にご連絡ください。</p>
+        <p>📧 example@email.com</p>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2026 赤い背景のページ. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
